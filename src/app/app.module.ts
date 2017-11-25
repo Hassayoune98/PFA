@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ServiceComponent } from './service/service.component';
 import { SignComponent } from './sign/sign.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     TestimonialsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

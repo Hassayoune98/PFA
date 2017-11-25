@@ -1,6 +1,6 @@
-<div id="preloader"></div>
+<!--<div id="preloader"></div>-->
 <!-- Main Heder Start -->
-<section class="at-main-herader-sec">
+<section class="at-main-herader-sec" xmlns="http://www.w3.org/1999/html">
   <!-- Header top start -->
   <div class="at-header-topbar">
     <div class="container">
@@ -14,9 +14,9 @@
         </div>
         <div class="col-lg-2 col-lg-offset-3 col-md-3 col-md-offset-1 col-sm-3 col-xs-6 at-full-wd480">
           <div class="at-sign-in-up clearfix">
-            <p><i class="icofont icofont-sign-in"></i><a href="sign-in-up.html">sign in</a>
+            <p><i class="icofont icofont-sign-in"></i><a routerLink="/sign">sign in</a>
             </p>
-            <p><i class="icofont icofont-pencil-alt-2"></i> <a href="sign-in-up.html">sign up</a>
+            <p><i class="icofont icofont-pencil-alt-2"></i> <a routerLink="/sign">sign up</a>
             </p>
           </div>
         </div>
@@ -38,22 +38,22 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index-one.html"><img src="images/logo.png" alt="">
+              <a class="navbar-brand" href="index-one.html"><img src="../../assets/images/logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-hover="dropdown" data-animations="fadeInUp">
               <ul class="nav navbar-nav navbar-right">
 
-                <li><a href="index-two.html">Home</a></li>
-                <li><a href="about.html">About</a>
+                <li><a routerLink="/home">Home</a></li>
+                <li><a routerLink="/about">About</a>
                 </li>
 
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Agents <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                   <ul class="dropdown-menu">
-                    <li><a href="agents.html">Our agents</a>
+                    <li><a routerLink="/agents">Our agents</a>
                     </li>
-                    <li><a href="agents-details.html">agents details</a>
+                    <li><a routerLink="/agents-d">agents details</a>
                     </li>
                   </ul>
                 </li>
@@ -61,13 +61,13 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                   <ul class="dropdown-menu">
-                    <li><a href="testimonials.html">Testimonials</a>
+                    <li><a routerLink="/testimonials">Testimonials</a>
                     </li>
-                    <li><a href="service.html">Services</a>
+                    <li><a routerLink="/service">Services</a>
                     </li>
                   </ul>
                 </li>
-                <li><a href="contact.html">Contact</a>
+                <li><a routerLink="/contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -87,12 +87,12 @@
       <div class="col-md-6 col-sm-6">
         <div class="at-inner-title-box">
           <h2>Agents</h2>
-          <p><a href="index-one.html">Home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="#">Agents</a>
+          <p><a routerLink="/home">Home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="#">Agents</a>
           </p>
         </div>
       </div>
       <div class="col-md-6 col-sm-6">
-        <img src="images/title.png" alt="">
+        <img src="../../assets/images/title.png" alt="">
       </div>
     </div>
   </div>
@@ -106,7 +106,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="at-agent-col">
           <div class="at-agent-img">
-            <img src="images/agents/1.png" alt="">
+            <img src="../../assets/images/agents/1.png" alt="">
             <div class="at-agent-social">
               <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -118,7 +118,7 @@
             </div>
           </div>
           <div class="at-agent-info">
-            <h4><a href="agents-details.html">Martin Guptil</a></h4>
+            <h4><a routerLink="/agents-d">Martin Guptil</a></h4>
             <p>sales executive</p>
           </div>
         </div>
@@ -126,7 +126,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="at-agent-col">
           <div class="at-agent-img">
-            <img src="images/agents/2.png" alt="">
+            <img src="../../assets/images/agents/2.png" alt="">
             <div class="at-agent-social">
               <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -138,7 +138,7 @@
             </div>
           </div>
           <div class="at-agent-info">
-            <h4><a href="agents-details.html">Jesica Mile</a></h4>
+            <h4><a routerLink="/agents-d">Jesica Mile</a></h4>
             <p>sales executive</p>
           </div>
         </div>
@@ -146,7 +146,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="at-agent-col">
           <div class="at-agent-img">
-            <img src="images/agents/3.png" alt="">
+            <img src="../../assets/images/agents/3.png" alt="">
             <div class="at-agent-social">
               <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -158,7 +158,7 @@
             </div>
           </div>
           <div class="at-agent-info">
-            <h4><a href="agents-details.html">Thomas Jons</a></h4>
+            <h4><a routerLink="/agents-d">Thomas Jons</a></h4>
             <p>sales executive</p>
           </div>
         </div>
@@ -166,7 +166,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="at-agent-col">
           <div class="at-agent-img">
-            <img src="images/agents/4.png" alt="">
+            <img src="../../assets/images/agents/4.png" alt="">
             <div class="at-agent-social">
               <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -178,7 +178,7 @@
             </div>
           </div>
           <div class="at-agent-info">
-            <h4><a href="agents-details.html">Cris Jordan</a></h4>
+            <h4><a routerLink="/agents-d">Cris Jordan</a></h4>
             <p>sales executive</p>
           </div>
         </div>
@@ -186,7 +186,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="at-agent-col">
           <div class="at-agent-img">
-            <img src="images/agents/5.png" alt="">
+            <img src="../../assets/images/agents/5.png" alt="">
             <div class="at-agent-social">
               <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -198,7 +198,7 @@
             </div>
           </div>
           <div class="at-agent-info">
-            <h4><a href="agents-details.html">Marri Guptil</a></h4>
+            <h4><a routerLink="/agents-d">Marri Guptil</a></h4>
             <p>sales executive</p>
           </div>
         </div>
@@ -206,7 +206,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="at-agent-col">
           <div class="at-agent-img">
-            <img src="images/agents/6.png" alt="">
+            <img src="../../assets/images/agents/6.png" alt="">
             <div class="at-agent-social">
               <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -218,7 +218,7 @@
             </div>
           </div>
           <div class="at-agent-info">
-            <h4><a href="agents-details.html">Martin Mozina</a></h4>
+            <h4><a routerLink="/agents-d">Martin Mozina</a></h4>
             <p>sales executive</p>
           </div>
         </div>
@@ -226,7 +226,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="at-agent-col">
           <div class="at-agent-img">
-            <img src="images/agents/2.png" alt="">
+            <img src="../../assets/images/agents/2.png" alt="">
             <div class="at-agent-social">
               <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -238,7 +238,7 @@
             </div>
           </div>
           <div class="at-agent-info">
-            <h4><a href="agents-details.html">Jesica Mile</a></h4>
+            <h4><a routerLink="/agents-d">Jesica Mile</a></h4>
             <p>sales executive</p>
           </div>
         </div>
@@ -246,7 +246,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="at-agent-col">
           <div class="at-agent-img">
-            <img src="images/agents/3.png" alt="">
+            <img src="../../assets/images/agents/3.png" alt="">
             <div class="at-agent-social">
               <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -258,7 +258,7 @@
             </div>
           </div>
           <div class="at-agent-info">
-            <h4><a href="agents-details.html">Thomas Jons</a></h4>
+            <h4><a routerLink="/agents-d">Thomas Jons</a></h4>
             <p>sales executive</p>
           </div>
         </div>
@@ -293,7 +293,7 @@
       <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="at-footer-about-col at-col-default-mar">
           <div class="at-footer-logo">
-            <img src="images/footer-logo.png" alt="">
+            <img src="../../assets/images/footer-logo.png" alt="">
           </div>
           <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
@@ -306,13 +306,13 @@
             <div class="at-heading-inside-line"></div>
           </div>
           <ul>
-            <li><a href="index-one.html">Home</a>
+            <li><a routerLink="/home">Home</a>
             </li>
-            <li><a href="about-one.html">About Us</a>
+            <li><a routerLink="/about">About Us</a>
             </li>
             <li><a href="properties-col-5.html">properties</a>
             </li>
-            <li><a href="agents.html">Agents</a>
+            <li><a routerLink="/agents">Agents</a>
             </li>
             <li><a href="blog-gird.html">Our Blog</a>
             </li>
@@ -329,39 +329,39 @@
             <!--portfolio single img end-->
             <ul>
               <li>
-                <a class="thumbnail gallery" href="images/gallery/1.jpg"><img src="images/gallery/1.jpg" alt="">
+                <a class="thumbnail gallery" href="../../assets/images/gallery/1.jpg"><img src="../../assets/images/gallery/1.jpg" alt="">
                 </a>
               </li>
               <li>
-                <a class="thumbnail gallery" href="images/gallery/2.jpg"><img src="images/gallery/2.jpg" alt="">
+                <a class="thumbnail gallery" href="../../assets/images/gallery/2.jpg"><img src="../../assets/images/gallery/2.jpg" alt="">
                 </a>
               </li>
               <li>
-                <a class="thumbnail gallery" href="images/gallery/3.jpg"><img src="images/gallery/3.jpg" alt="">
+                <a class="thumbnail gallery" href="../../assets/images/gallery/3.jpg"><img src="../../assets/images/gallery/3.jpg" alt="">
                 </a>
               </li>
               <li>
-                <a class="thumbnail gallery" href="images/gallery/4.jpg"><img src="images/gallery/4.jpg" alt="">
+                <a class="thumbnail gallery" href="../../assets/images/gallery/4.jpg"><img src="../../assets/images/gallery/4.jpg" alt="">
                 </a>
               </li>
               <li>
-                <a class="thumbnail gallery" href="images/gallery/5.jpg"><img src="images/gallery/5.jpg" alt="">
+                <a class="thumbnail gallery" href="../../assets/images/gallery/5.jpg"><img src="../../assets/images/gallery/5.jpg" alt="">
                 </a>
               </li>
               <li>
-                <a class="thumbnail gallery" href="images/gallery/6.jpg"><img src="images/gallery/6.jpg" alt="">
+                <a class="thumbnail gallery" href="../../assets/images/gallery/6.jpg"><img src="../../assets/images/gallery/6.jpg" alt="">
                 </a>
               </li>
               <li>
-                <a class="thumbnail gallery" href="images/gallery/7.jpg"><img src="images/gallery/7.jpg" alt="">
+                <a class="thumbnail gallery" href="../../assets/images/gallery/7.jpg"><img src="../../assets/images/gallery/7.jpg" alt="">
                 </a>
               </li>
               <li>
-                <a class="thumbnail gallery" href="images/gallery/8.jpg"><img src="images/gallery/8.jpg" alt="">
+                <a class="thumbnail gallery" href="../../assets/images/gallery/8.jpg"><img src="../../assets/images/gallery/8.jpg" alt="">
                 </a>
               </li>
               <li>
-                <a class="thumbnail gallery" href="images/gallery/9.jpg"><img src="images/gallery/9.jpg" alt="">
+                <a class="thumbnail gallery" href="../../assets/images/gallery/9.jpg"><img src="../../assets/images/gallery/9.jpg" alt="">
                 </a>
               </li>
             </ul>
@@ -372,26 +372,3 @@
   </div>
 </footer>
 <!-- footer end -->
-
-<!-- jQuery -->
-<script src="assets/js/jquery.min.js"></script>
-<!-- Bootstrap Core JavaScript -->
-<script src="assets/js/bootstrap.min.js"></script>
-
-<!-- all plugins and JavaScript -->
-<script type="text/javascript" src="assets/js/css3-animate-it.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap-dropdownhover.min.js"></script>
-<script type="text/javascript" src="assets/js/featherlight.min.js"></script>
-<script type="text/javascript" src="assets/js/featherlight.gallery.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.flexslider.js"></script>
-<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="assets/js/jarallax.js"></script>
-<script type="text/javascript" src="assets/js/slick.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery-ui.js"></script>
-<script type="text/javascript" src="assets/js/jquery-scrolltofixed-min.js"></script>
-<script type="text/javascript" src="assets/js/morphext.min.js"></script>
-<script type="text/javascript" src="assets/js/dyscrollup.js"></script>
-<script type="text/javascript" src="assets/js/app.js"></script>
-
-<!-- Main Custom JS -->
-<script type="text/javascript" src="assets/js/main.js"></script>
