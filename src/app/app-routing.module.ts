@@ -2,28 +2,24 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { AgentsComponent } from './agents/agents.component';
-import { AgentsDComponent } from './agents-d/agents-d.component';
-import { ContactComponent } from './contact/contact.component';
-import { ServiceComponent } from './service/service.component';
-import { SignComponent } from './sign/sign.component';
-import { TestimonialsComponent } from './testimonials/testimonials.component';
-
-
-
-
-
+import { AgentsComponent} from './agents/agents.component';
+import {AgentsDetailsComponent} from './agents-details/agents-details.component';
+import {TestimonialsComponent} from './testimonials/testimonials.component';
+import {ContactComponent} from './contact/contact.component';
+import {ServiceComponent} from './service/service.component';
+import {SignInUpComponent} from './sign-in-up/sign-in-up.component';
 
 const routes: Routes = [
-    { path: 'home', component: HomeComponent },
-    { path: 'about', component: AboutComponent},
-    { path: 'agents', component: AgentsComponent },
-    { path: 'agents-d', component: AgentsDComponent},
-    { path: 'contact', component: ContactComponent },
-    { path: 'service', component: ServiceComponent },
-    { path: 'sign', component: SignComponent },
-    { path: 'testimonials', component: TestimonialsComponent },
-];
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    {path: 'Home', component: HomeComponent },
+    { path: 'About', component: AboutComponent},
+    { path: 'Agents', component: AgentsComponent},
+    {path: 'AgentsDetails', component: AgentsDetailsComponent },
+    {path: 'Testimonials', component: TestimonialsComponent},
+    {path: 'Contact', component: ContactComponent},
+    {path: 'Service', component: ServiceComponent},
+    {path: 'SignInUp', component: SignInUpComponent},
+    ];
 
 @NgModule({
     imports: [
@@ -31,7 +27,5 @@ const routes: Routes = [
     ],
     exports: [ RouterModule ]
 })
-
-
 
 export class AppRoutingModule { }
